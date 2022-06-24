@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Cursive, Geneva, Tahoma, sans-serif;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -14,23 +14,28 @@ body {
   display: flex;
   justify-content: flex-end;
   margin: 10px;
+  margin-left: 20px;
   padding: 10px;
 }
 
 a {
-  color: #fff;
+  color: black;
   padding: 5px;
 }
 
 nav {
-  background-image: linear-gradient(to right, white, skyblue, blue);
+  background-color: #71d6ed;
+}
+
+img {
+  margin-inline-end: auto;
+  height: 50px;
 }
 
 header {
   padding: 40px;
   text-align: center;
-  background-image: linear-gradient(to right, white, skyblue, blue);
-  color: #fff;
+  color: rgb(12, 86, 197);
 }
 
 ul {
@@ -45,20 +50,21 @@ section {
 }
 
 footer {
-  padding: 5px;
-  background-image: linear-gradient(to right, white, skyblue, blue);
-  margin-top: auto;
+  background-color: #71d6ed;
 }
 
-p {
-  float: right;
-  margin-right: 100px;
+h2#contact {
+  margin-left: 10px;
 }
 
 .fa-brands {
   font-size: 1.2em;
   padding-right: 5px;
   margin-left: 5px;
+}
+
+.fa-phone:before {
+  padding: 10px;
 }
 
 .fa-github:before {
