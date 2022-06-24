@@ -25,14 +25,17 @@ a {
 
 nav {
   background-color: #71d6ed;
+  padding: 2px;
+  box-shadow: 2px 2px 15px 5px grey;
 }
 
-img {
+#navbar-picture {
   margin-inline-end: auto;
   height: 50px;
+  border-radius: 20px;
 }
 
-header {
+h1 {
   padding: 40px;
   text-align: center;
   color: rgb(12, 86, 197);
@@ -49,12 +52,33 @@ section {
   padding: 20px;
 }
 
-footer {
-  background-color: #71d6ed;
+#project1 {
+  width: 500px;
 }
 
-h2#contact {
-  margin-left: 10px;
+#project1:hover {
+  width: 600px;
+}
+
+#project2 {
+  width: 500px;
+  float: right;
+}
+
+#project2:hover {
+  width: 600px;
+}
+
+/* .portfolio-images {
+  width: 500px;
+}
+
+.portfolio-images:hover {
+  background-color: black;
+} */
+
+footer {
+  background-color: #71d6ed;
 }
 
 .fa-brands {
@@ -73,6 +97,6 @@ h2#contact {
 }
 
 .fa-linkedin:before {
-    content: "\f08c";
-    padding: 10px;
+  content: "\f08c";
+  padding: 10px;
 }
