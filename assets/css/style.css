@@ -1,3 +1,4 @@
+/* For the entire HTML page */
 * {
   box-sizing: border-box;
 }
@@ -12,10 +13,8 @@ body {
 
 .flex-container {
   display: flex;
-  justify-content: flex-end;
   margin: 10px;
-  margin-left: 20px;
-  padding: 10px;
+  padding: 20px;
 }
 
 a {
@@ -35,12 +34,24 @@ nav {
   border-radius: 20px;
 }
 
+/* h1:after {
+  content: "Professional Portfolio";
+  margin-inline-end: auto;
+  height: 50px;
+  border-radius: 20px;
+} */
+
 h1 {
   padding: 40px;
   text-align: center;
   color: rgb(12, 86, 197);
 }
 
+h2 {
+  padding-right: 50px;
+}
+
+/* Removing the bullets in front of the list items */
 ul {
   list-style-type: none;
   margin: 0;
@@ -52,50 +63,50 @@ section {
   padding: 20px;
 }
 
+/* The width of the image of project 1 */
 #project1 {
   width: 500px;
 }
 
+/* When hovering over project 1 the width will change to 600px */
 #project1:hover {
   width: 600px;
 }
-
+/* The width of image of project 2 */
 #project2 {
   width: 500px;
-  float: right;
 }
 
+/* When hovering over project 2 the width will change to 600px */
 #project2:hover {
   width: 600px;
 }
 
-/* .portfolio-images {
-  width: 500px;
-}
-
-.portfolio-images:hover {
-  background-color: black;
-} */
-
 footer {
   background-color: #71d6ed;
+  display: flex;
+  padding-left: 20px;
 }
 
+/* Making Font awesome icons bigger */
 .fa-brands {
   font-size: 1.2em;
   padding-right: 5px;
   margin-left: 5px;
 }
 
+/* Before the phone number is a phone icon from Font Awesome */
 .fa-phone:before {
   padding: 10px;
 }
 
+/* Before the github link is a github icon from Font Awesome */
 .fa-github:before {
   content: "\f09b";
   padding: 10px;
 }
 
+/* Before linkedin link is a linkedin icon from Font Awesome */
 .fa-linkedin:before {
   content: "\f08c";
   padding: 10px;
