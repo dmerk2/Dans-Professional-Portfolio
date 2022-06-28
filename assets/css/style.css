@@ -1,3 +1,8 @@
+/* Creating CSS variables */
+:root {
+  --border: 1px solid grey;
+}
+
 /* For the entire HTML page */
 * {
   box-sizing: border-box;
@@ -12,9 +17,18 @@ body {
   font-size: 20px;
 }
 
+nav {
+  background-color: #e8f8ff;
+  border-bottom: var(--border);
+  padding: 10px;
+  box-shadow: 5px 5px 5px grey;
+  /* Putting the box shadow in front of the hero image */
+  z-index: 1;
+}
+
 .flex-container {
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   margin: 10px;
   padding: 20px;
 }
@@ -43,11 +57,6 @@ h1 {
   margin-top: 150px;
   padding: 40px;
   text-align: center;
-  color: rgb(255, 255, 255);
-}
-
-h2 {
-  padding-right: 50px;
 }
 
 /* Removing the bullets in front of the list items */
@@ -60,10 +69,13 @@ ul {
 section {
   flex: 0 0 400px;
   padding: 20px;
+  flex-wrap: wrap;
 }
 
 /* The width of the image of project 1 */
 #project1 {
+  flex-wrap: wrap;
+  flex-direction: column;
   width: 500px;
 }
 
@@ -82,8 +94,10 @@ section {
 }
 
 footer {
-  text-align: center;
-  margin-bottom: 25px;
+  text-align: center; 
+  background-color: #e8f8ff;
+  border-top: var(--border);
+  box-shadow: 1px 2px 5px grey;
 }
 
 /* Making Font awesome icons bigger */
