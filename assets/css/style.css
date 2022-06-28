@@ -72,28 +72,20 @@ section {
   flex-wrap: wrap;
 }
 
-/* The width of the image of project 1 */
-#project1 {
+/* Selecting all project classes */
+.projects {
   flex-wrap: wrap;
   flex-direction: column;
-  width: 500px;
+  width: 300px;
 }
 
-/* When hovering over project 1 the width will change to 600px */
-#project1:hover {
-  width: 600px;
-}
-/* The width of image of project 2 */
-#project2 {
-  width: 500px;
-}
-
-/* When hovering over project 2 the width will change to 600px */
-#project2:hover {
-  width: 600px;
+/* When hovering over projects class the size increases */
+.projects:hover {
+  width: 350px;
 }
 
 footer {
+  margin-top: 20px;
   text-align: center; 
   background-color: #e8f8ff;
   border-top: var(--border);
