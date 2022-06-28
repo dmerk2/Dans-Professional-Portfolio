@@ -1,6 +1,7 @@
 /* Creating CSS variables */
 :root {
   --border: 1px solid grey;
+  --flex-wrap: wrap;
 }
 
 /* For the entire HTML page */
@@ -53,6 +54,15 @@ a {
   border-radius: 20px;
 }
 
+/* #navbar-picture::after {
+  content: 'Daniel Merkin';
+  z-index: 1;
+  color: black;
+  margin-inline-end: auto;
+  height: 50px;
+  border-radius: 20px;
+} */
+
 h1 {
   margin-top: 150px;
   padding: 40px;
@@ -66,22 +76,34 @@ ul {
   padding: 20px;
 }
 
+a:hover {
+  color:blue;
+  font-size: 22px;
+}
+
+li a:hover {
+  color:blue;
+  font-size: 22px;
+}
+
 section {
   flex: 0 0 400px;
   padding: 20px;
-  flex-wrap: wrap;
+  flex-wrap: var(--flex-wrap);
 }
 
 /* Selecting all project classes */
 .projects {
-  flex-wrap: wrap;
+  flex-wrap: var(--flex-wrap);
   flex-direction: column;
-  width: 300px;
+  width: 25%;
 }
 
 /* When hovering over projects class the size increases */
 .projects:hover {
-  width: 350px;
+  width: 28%;
+  flex-direction: column;
+  flex-wrap: var(--flex-wrap);
 }
 
 footer {
@@ -90,6 +112,11 @@ footer {
   background-color: #e8f8ff;
   border-top: var(--border);
   box-shadow: 1px 2px 5px grey;
+}
+
+#footer-text {
+  font-size: 1.5rem;
+  color: blue;
 }
 
 /* Making Font awesome icons bigger */
