@@ -34,6 +34,12 @@ nav {
   padding: 20px;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .hero {
   height: 500px;
   width: 100%;
@@ -41,6 +47,20 @@ nav {
   background-image: url("../images/background-image.jpg");
   background-size: cover;
   background-position: center;
+}
+
+#danPic {
+  width: 12%;
+  height: 12%;
+  background-position: center;
+  float: left;
+  margin-right: 2rem;
+  border-radius: 25%;
+  box-shadow: 5px 3px 5px black;
+}
+
+#aboutMe {
+  text-align: center;
 }
 
 a {
@@ -53,15 +73,6 @@ a {
   height: 50px;
   border-radius: 20px;
 }
-
-/* #navbar-picture::after {
-  content: 'Daniel Merkin';
-  z-index: 1;
-  color: black;
-  margin-inline-end: auto;
-  height: 50px;
-  border-radius: 20px;
-} */
 
 h1 {
   margin-top: 150px;
@@ -77,12 +88,7 @@ ul {
 }
 
 a:hover {
-  color:blue;
-  font-size: 22px;
-}
-
-li a:hover {
-  color:blue;
+  color: blue;
   font-size: 22px;
 }
 
@@ -96,19 +102,20 @@ section {
 .projects {
   flex-wrap: var(--flex-wrap);
   flex-direction: column;
-  width: 25%;
+  justify-content: flex-start;
+  width: 33%;
 }
 
 /* When hovering over projects class the size increases */
 .projects:hover {
-  width: 28%;
+  width: 35%;
   flex-direction: column;
   flex-wrap: var(--flex-wrap);
 }
 
 footer {
   margin-top: 20px;
-  text-align: center; 
+  text-align: center;
   background-color: #e8f8ff;
   border-top: var(--border);
   box-shadow: 1px 2px 5px grey;
