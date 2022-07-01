@@ -14,7 +14,7 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100%;
   font-size: 20px;
 }
 
@@ -27,6 +27,7 @@ nav {
   z-index: 1;
 }
 
+/* Making responsive containers */
 .flex-container {
   display: flex;
   justify-content: space-between;
@@ -34,6 +35,7 @@ nav {
   padding: 20px;
 }
 
+/* Making responsive columns */
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -49,6 +51,7 @@ nav {
   background-position: center;
 }
 
+/* Picture of me in about section */
 #danPic {
   width: 12%;
   height: 12%;
@@ -93,22 +96,17 @@ a:hover {
 }
 
 section {
-  flex: 0 0 400px;
   padding: 20px;
-  flex-wrap: var(--flex-wrap);
 }
 
-/* Selecting all project classes */
+/* Selecting all projects */
 .projects {
-  flex-wrap: var(--flex-wrap);
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 33%;
+  width: 22%;
 }
 
 /* When hovering over projects class the size increases */
 .projects:hover {
-  width: 35%;
+  width: 25%;
   flex-direction: column;
   flex-wrap: var(--flex-wrap);
 }
@@ -148,4 +146,20 @@ footer {
 .fa-linkedin:before {
   content: "\f08c";
   padding: 10px;
+}
+
+#projects-section {
+  text-align: center;
+}
+
+/* Projects take up 100% of the screen at 800px */
+@media only screen and (max-width: 800px) {
+  .projects {
+    width: 97%;
+  }
+
+  .projects:hover {
+    width: 100%;
+  }
+
 }
