@@ -1,0 +1,165 @@
+/* Creating CSS variables */
+:root {
+  --border: 1px solid grey;
+  --flex-wrap: wrap;
+}
+
+/* For the entire HTML page */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cursive, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-size: 20px;
+}
+
+nav {
+  background-color: #e8f8ff;
+  border-bottom: var(--border);
+  padding: 10px;
+  box-shadow: 5px 5px 5px grey;
+  /* Putting the box shadow in front of the hero image */
+  z-index: 1;
+}
+
+/* Making responsive containers */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 20px;
+}
+
+/* Making responsive columns */
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero {
+  height: 500px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("./assets/images/background-image.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Picture of me in about section */
+#danPic {
+  width: 12%;
+  height: 12%;
+  background-position: center;
+  float: left;
+  margin-right: 2rem;
+  border-radius: 25%;
+  box-shadow: 5px 3px 5px black;
+}
+
+#aboutMe {
+  text-align: center;
+}
+
+a {
+  color: black;
+  padding: 5px;
+}
+
+#navbar-picture {
+  margin-inline-end: auto;
+  height: 50px;
+  border-radius: 20px;
+}
+
+h1 {
+  margin-top: 150px;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Removing the bullets in front of the list items */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+}
+
+a:hover {
+  color: blue;
+  font-size: 22px;
+}
+
+section {
+  padding: 20px;
+}
+
+/* Selecting all projects */
+.projects {
+  width: 22%;
+}
+
+/* When hovering over projects class the size increases */
+.projects:hover {
+  width: 25%;
+  flex-direction: column;
+  flex-wrap: var(--flex-wrap);
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  background-color: #e8f8ff;
+  border-top: var(--border);
+  box-shadow: 1px 2px 5px grey;
+}
+
+#footer-text {
+  font-size: 1.5rem;
+  color: blue;
+}
+
+/* Making Font awesome icons bigger */
+.fa-brands {
+  font-size: 1.2em;
+  padding-right: 5px;
+  margin-left: 5px;
+}
+
+/* Before the phone number is a phone icon from Font Awesome */
+.fa-phone:before {
+  padding: 10px;
+}
+
+/* Before the github link is a github icon from Font Awesome */
+.fa-github:before {
+  content: "\f09b";
+  padding: 10px;
+}
+
+/* Before linkedin link is a linkedin icon from Font Awesome */
+.fa-linkedin:before {
+  content: "\f08c";
+  padding: 10px;
+}
+
+#projects-section {
+  text-align: center;
+}
+
+/* Projects take up 100% of the screen at 800px */
+@media only screen and (max-width: 800px) {
+  .projects {
+    width: 97%;
+  }
+
+  .projects:hover {
+    width: 100%;
+  }
+
+}
