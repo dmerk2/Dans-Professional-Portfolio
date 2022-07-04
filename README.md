@@ -5,6 +5,7 @@ Building Dan's Professional Portfolio with only HTML and CSS that will be respon
 
 ## Screenshot
 Website Template
+<img src="./assets/images/screenshot.png">
 
 ## Deployed Website URL
 https://dmerk2.github.io/Dans-Professional-Portfolio/ 
